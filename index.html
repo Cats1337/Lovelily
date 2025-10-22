@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Lovelily Blooms — Fresh Flowers, Bouquets, Workshops</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Lovelily Blooms. Fresh seasonal flowers, custom bouquets, and floral workshops." />
+  <meta name="color-scheme" content="light">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<header class="site-header">
+  <div class="container">
+    <a class="brand" href="#home">Lovelily Blooms</a>
+    <nav class="nav">
+      <a href="#gallery">Gallery</a>
+      <a href="#shop">Shop</a>
+      <a href="#classes">Workshops</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+      <button id="cartButton" class="btn small" aria-haspopup="dialog" aria-controls="cartDrawer">Cart <span id="cartCount" class="badge">0</span></button>
+    </nav>
+  </div>
+</header>
+
+<main id="home">
+  <section class="hero paper">
+    <div class="container hero-inner">
+      <div class="hero-copy">
+        <h1>Fresh flowers, crafted with care</h1>
+        <p>Seasonal bouquets and arrangements. Custom orders and cozy workshops.</p>
+        <div class="actions">
+          <a class="btn" href="#shop">Shop bouquets</a>
+          <a class="btn alt" href="#classes">Book a workshop</a>
+        </div>
+        <ul class="socials">
+          <li><a href="https://www.instagram.com/" target="_blank" rel="noopener">Instagram</a></li>
+          <li><a href="https://www.facebook.com/" target="_blank" rel="noopener">Facebook</a></li>
+        </ul>
+      </div>
+      <figure class="hero-image cyanotype">
+        <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?q=80&w=1600&auto=format&fit=crop" alt="Fresh bouquet of lilies and seasonal flowers">
+      </figure>
+    </div>
+  </section>
+
+  <section id="gallery" class="section">
+    <div class="container">
+      <div class="section-head">
+        <h2>Gallery</h2>
+        <div class="filters" role="group" aria-label="Filter gallery">
+          <button class="chip is-active" data-filter="all">All</button>
+          <button class="chip" data-filter="bouquet">Bouquets</button>
+          <button class="chip" data-filter="wedding">Weddings</button>
+          <button class="chip" data-filter="centerpiece">Centerpieces</button>
+        </div>
+      </div>
+      <div id="galleryGrid" class="grid gallery-grid"></div>
+    </div>
+  </section>
+
+  <section id="shop" class="section paper">
+    <div class="container">
+      <div class="section-head">
+        <h2>Shop</h2>
+        <p>Same day pickup on select items. Next day delivery in town.</p>
+      </div>
+      <div id="productGrid" class="grid product-grid"></div>
+    </div>
+  </section>
+
+  <section id="classes" class="section">
+    <div class="container">
+      <div class="section-head">
+        <h2>Workshops</h2>
+        <p>Friendly classes for all levels. Tools and flowers provided.</p>
+      </div>
+      <div id="classGrid" class="grid class-grid"></div>
+      <div class="notice">
+        <p>Replace links with Ticket Tailor or Calendly. Or wire Stripe Checkout on your server.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="section paper">
+    <div class="container split">
+      <div>
+        <h2>About</h2>
+        <p>Lovelily Blooms is a small floral studio. We source seasonal stems and arrange with a light, airy touch.</p>
+        <p>Custom bouquets and event florals available by request. We love lilies. We love color. We love simple beauty.</p>
+      </div>
+      <figure class="cyanotype">
+        <img src="https://images.unsplash.com/photo-1476209446441-5ad72f223207?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDZ8fGZsb3dlcnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&q=60&w=400" alt="Florist arranging flowers in studio">
+      </figure>
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <div class="container">
+      <h2>Contact</h2>
+      <form id="contactForm" class="card" novalidate>
+        <div class="field">
+          <label for="name">Name</label>
+          <input id="name" name="name" required />
+          <small class="error" data-for="name"></small>
+        </div>
+        <div class="field">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" required />
+          <small class="error" data-for="email"></small>
+        </div>
+        <div class="field">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+          <small class="error" data-for="message"></small>
+        </div>
+        <button class="btn" type="submit">Send</button>
+        <p id="contactFeedback" class="muted" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer paper">
+  <div class="container">
+    <p>&copy; <span id="year"></span> Lovelily Blooms. All rights reserved.</p>
+  </div>
+</footer>
+
+<aside id="cartDrawer" class="cart" aria-hidden="true" aria-labelledby="cartTitle" role="dialog">
+  <div class="cart-inner">
+    <div class="cart-head">
+      <h3 id="cartTitle">Your cart</h3>
+      <button id="closeCart" class="icon-btn" aria-label="Close cart">&times;</button>
+    </div>
+    <div id="cartItems" class="cart-items"></div>
+    <div class="cart-foot">
+      <div class="cart-row">
+        <span>Subtotal</span>
+        <strong id="cartSubtotal">$0.00</strong>
+      </div>
+      <button id="checkoutBtn" class="btn wide">Checkout</button>
+      <p class="muted">Use Stripe Payment Links or your Checkout Session endpoint.</p>
+    </div>
+  </div>
+</aside>
+
+<div id="lightbox" class="lightbox" aria-hidden="true">
+  <button class="icon-btn lb-close" aria-label="Close image">&times;</button>
+  <img id="lightboxImg" alt="">
+  <p id="lightboxCaption" class="lb-cap"></p>
+</div>
+
+<script src="app.js" defer></script>
+</body>
+</html>
