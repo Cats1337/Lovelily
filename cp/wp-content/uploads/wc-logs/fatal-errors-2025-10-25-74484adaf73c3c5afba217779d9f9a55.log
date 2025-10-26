@@ -1,0 +1,327 @@
+2025-10-25T19:10:05+00:00 CRITICAL Uncaught Error: Call to undefined method AWCDP_Email_Deposit_Paid::get_default_additional_content() in /var/www/html/wp-content/plugins/deposits-partial-payments-for-woocommerce/includes/emails/class-awcdp-email-deposit-paid.php:201
+Stack trace:
+#0 /var/www/html/wp-content/plugins/classic-commerce-master/includes/emails/class-wc-email.php(239): AWCDP_Email_Deposit_Paid->init_form_fields()
+#1 /var/www/html/wp-content/plugins/deposits-partial-payments-for-woocommerce/includes/emails/class-awcdp-email-deposit-paid.php(30): WC_Email->__construct()
+#2 /var/www/html/wp-content/plugins/deposits-partial-payments-for-woocommerce/includes/emails/class-awcdp-email-deposit-paid.php(222): AWCDP_Email_Deposit_Paid->__construct()
+#3 /var/www/html/wp-content/plugins/deposits-partial-payments-for-woocommerce/includes/class-awcdp-front-end.php(2435): include('/var/www/html/w...')
+#4 /var/www/html/wp-includes/class-wp-hook.php(308): AWCDP_Front_End->awcdp_email_classes(Array)
+#5 /var/www/html/wp-includes/plugin.php(205): WP_Hook->apply_filters(Array, Array)
+#6 /var/www/html/wp-content/plugins/classic-commerce-master/includes/class-wc-emails.php(228): apply_filters('woocommerce_ema...', Array)
+#7 /var/www/html/wp-content/plugins/classic-commerce-master/includes/class-wc-emails.php(185): WC_Emails->init()
+#8 /var/www/html/wp-content/plugins/classic-commerce-master/includes/class-wc-emails.php(50): WC_Emails->__construct()
+#9 /var/www/html/wp-content/plugins/classic-commerce-master/includes/class-wc-api.php(368): WC_Emails::instance()
+#10 /var/www/html/wp-content/plugins/classic-commerce-master/includes/class-wc-api.php(251): WC_API->register_wp_admin_settings()
+#11 /var/www/html/wp-includes/class-wp-hook.php(308): WC_API->register_rest_routes(Object(WP_REST_Server))
+#12 /var/www/html/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters(NULL, Array)
+#13 /var/www/html/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#14 /var/www/html/wp-includes/rest-api.php(533): do_action('rest_api_init', Object(WP_REST_Server))
+#15 /var/www/html/wp-includes/rest-api.php(359): rest_get_server()
+#16 /var/www/html/wp-includes/class-wp-hook.php(308): rest_api_loaded(Object(WP))
+#17 /var/www/html/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters(NULL, Array)
+#18 /var/www/html/wp-includes/plugin.php(565): WP_Hook->do_action(Array)
+#19 /var/www/html/wp-includes/class-wp.php(410): do_action_ref_array('parse_request', Array)
+#20 /var/www/html/wp-includes/class-wp.php(791): WP->parse_request('')
+#21 /var/www/html/wp-includes/functions.php(1334): WP->main('')
+#22 /var/www/html/wp-blog-header.php(16): wp()
+#23 /var/www/html/index.php(17): require('/var/www/html/w...')
+#24 {main}
+  thrown in /var/www/html/wp-content/plugins/deposits-partial-payments-for-woocommerce/includes/emails/class-awcdp-email-deposit-paid.php on line 201
+
+2025-10-25T19:10:12+00:00 CRITICAL Uncaught Error: Call to undefined method AWCDP_Email_Deposit_Paid::get_default_additional_content() in /var/www/html/wp-content/plugins/deposits-partial-payments-for-woocommerce/includes/emails/class-awcdp-email-deposit-paid.php:201
+Stack trace:
+#0 /var/www/html/wp-content/plugins/classic-commerce-master/includes/emails/class-wc-email.php(239): AWCDP_Email_Deposit_Paid->init_form_fields()
+#1 /var/www/html/wp-content/plugins/deposits-partial-payments-for-woocommerce/includes/emails/class-awcdp-email-deposit-paid.php(30): WC_Email->__construct()
+#2 /var/www/html/wp-content/plugins/deposits-partial-payments-for-woocommerce/includes/emails/class-awcdp-email-deposit-paid.php(222): AWCDP_Email_Deposit_Paid->__construct()
+#3 /var/www/html/wp-content/plugins/deposits-partial-payments-for-woocommerce/includes/class-awcdp-front-end.php(2435): include('/var/www/html/w...')
+#4 /var/www/html/wp-includes/class-wp-hook.php(308): AWCDP_Front_End->awcdp_email_classes(Array)
+#5 /var/www/html/wp-includes/plugin.php(205): WP_Hook->apply_filters(Array, Array)
+#6 /var/www/html/wp-content/plugins/classic-commerce-master/includes/class-wc-emails.php(228): apply_filters('woocommerce_ema...', Array)
+#7 /var/www/html/wp-content/plugins/classic-commerce-master/includes/class-wc-emails.php(185): WC_Emails->init()
+#8 /var/www/html/wp-content/plugins/classic-commerce-master/includes/class-wc-emails.php(50): WC_Emails->__construct()
+#9 /var/www/html/wp-content/plugins/classic-commerce-master/includes/class-wc-api.php(368): WC_Emails::instance()
+#10 /var/www/html/wp-content/plugins/classic-commerce-master/includes/class-wc-api.php(251): WC_API->register_wp_admin_settings()
+#11 /var/www/html/wp-includes/class-wp-hook.php(308): WC_API->register_rest_routes(Object(WP_REST_Server))
+#12 /var/www/html/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters(NULL, Array)
+#13 /var/www/html/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#14 /var/www/html/wp-includes/rest-api.php(533): do_action('rest_api_init', Object(WP_REST_Server))
+#15 /var/www/html/wp-includes/rest-api.php(359): rest_get_server()
+#16 /var/www/html/wp-includes/class-wp-hook.php(308): rest_api_loaded(Object(WP))
+#17 /var/www/html/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters(NULL, Array)
+#18 /var/www/html/wp-includes/plugin.php(565): WP_Hook->do_action(Array)
+#19 /var/www/html/wp-includes/class-wp.php(410): do_action_ref_array('parse_request', Array)
+#20 /var/www/html/wp-includes/class-wp.php(791): WP->parse_request('')
+#21 /var/www/html/wp-includes/functions.php(1334): WP->main('')
+#22 /var/www/html/wp-blog-header.php(16): wp()
+#23 /var/www/html/index.php(17): require('/var/www/html/w...')
+#24 {main}
+  thrown in /var/www/html/wp-content/plugins/deposits-partial-payments-for-woocommerce/includes/emails/class-awcdp-email-deposit-paid.php on line 201
+
+2025-10-25T19:10:12+00:00 CRITICAL Uncaught Error: Call to undefined method AWCDP_Email_Deposit_Paid::get_default_additional_content() in /var/www/html/wp-content/plugins/deposits-partial-payments-for-woocommerce/includes/emails/class-awcdp-email-deposit-paid.php:201
+Stack trace:
+#0 /var/www/html/wp-content/plugins/classic-commerce-master/includes/emails/class-wc-email.php(239): AWCDP_Email_Deposit_Paid->init_form_fields()
+#1 /var/www/html/wp-content/plugins/deposits-partial-payments-for-woocommerce/includes/emails/class-awcdp-email-deposit-paid.php(30): WC_Email->__construct()
+#2 /var/www/html/wp-content/plugins/deposits-partial-payments-for-woocommerce/includes/emails/class-awcdp-email-deposit-paid.php(222): AWCDP_Email_Deposit_Paid->__construct()
+#3 /var/www/html/wp-content/plugins/deposits-partial-payments-for-woocommerce/includes/class-awcdp-front-end.php(2435): include('/var/www/html/w...')
+#4 /var/www/html/wp-includes/class-wp-hook.php(308): AWCDP_Front_End->awcdp_email_classes(Array)
+#5 /var/www/html/wp-includes/plugin.php(205): WP_Hook->apply_filters(Array, Array)
+#6 /var/www/html/wp-content/plugins/classic-commerce-master/includes/class-wc-emails.php(228): apply_filters('woocommerce_ema...', Array)
+#7 /var/www/html/wp-content/plugins/classic-commerce-master/includes/class-wc-emails.php(185): WC_Emails->init()
+#8 /var/www/html/wp-content/plugins/classic-commerce-master/includes/class-wc-emails.php(50): WC_Emails->__construct()
+#9 /var/www/html/wp-content/plugins/classic-commerce-master/includes/class-wc-api.php(368): WC_Emails::instance()
+#10 /var/www/html/wp-content/plugins/classic-commerce-master/includes/class-wc-api.php(251): WC_API->register_wp_admin_settings()
+#11 /var/www/html/wp-includes/class-wp-hook.php(308): WC_API->register_rest_routes(Object(WP_REST_Server))
+#12 /var/www/html/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters(NULL, Array)
+#13 /var/www/html/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#14 /var/www/html/wp-includes/rest-api.php(533): do_action('rest_api_init', Object(WP_REST_Server))
+#15 /var/www/html/wp-includes/rest-api.php(359): rest_get_server()
+#16 /var/www/html/wp-includes/class-wp-hook.php(308): rest_api_loaded(Object(WP))
+#17 /var/www/html/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters(NULL, Array)
+#18 /var/www/html/wp-includes/plugin.php(565): WP_Hook->do_action(Array)
+#19 /var/www/html/wp-includes/class-wp.php(410): do_action_ref_array('parse_request', Array)
+#20 /var/www/html/wp-includes/class-wp.php(791): WP->parse_request('')
+#21 /var/www/html/wp-includes/functions.php(1334): WP->main('')
+#22 /var/www/html/wp-blog-header.php(16): wp()
+#23 /var/www/html/index.php(17): require('/var/www/html/w...')
+#24 {main}
+  thrown in /var/www/html/wp-content/plugins/deposits-partial-payments-for-woocommerce/includes/emails/class-awcdp-email-deposit-paid.php on line 201
+
+2025-10-25T19:10:13+00:00 CRITICAL Uncaught Error: Call to undefined method AWCDP_Email_Deposit_Paid::get_default_additional_content() in /var/www/html/wp-content/plugins/deposits-partial-payments-for-woocommerce/includes/emails/class-awcdp-email-deposit-paid.php:201
+Stack trace:
+#0 /var/www/html/wp-content/plugins/classic-commerce-master/includes/emails/class-wc-email.php(239): AWCDP_Email_Deposit_Paid->init_form_fields()
+#1 /var/www/html/wp-content/plugins/deposits-partial-payments-for-woocommerce/includes/emails/class-awcdp-email-deposit-paid.php(30): WC_Email->__construct()
+#2 /var/www/html/wp-content/plugins/deposits-partial-payments-for-woocommerce/includes/emails/class-awcdp-email-deposit-paid.php(222): AWCDP_Email_Deposit_Paid->__construct()
+#3 /var/www/html/wp-content/plugins/deposits-partial-payments-for-woocommerce/includes/class-awcdp-front-end.php(2435): include('/var/www/html/w...')
+#4 /var/www/html/wp-includes/class-wp-hook.php(308): AWCDP_Front_End->awcdp_email_classes(Array)
+#5 /var/www/html/wp-includes/plugin.php(205): WP_Hook->apply_filters(Array, Array)
+#6 /var/www/html/wp-content/plugins/classic-commerce-master/includes/class-wc-emails.php(228): apply_filters('woocommerce_ema...', Array)
+#7 /var/www/html/wp-content/plugins/classic-commerce-master/includes/class-wc-emails.php(185): WC_Emails->init()
+#8 /var/www/html/wp-content/plugins/classic-commerce-master/includes/class-wc-emails.php(50): WC_Emails->__construct()
+#9 /var/www/html/wp-content/plugins/classic-commerce-master/includes/class-wc-api.php(368): WC_Emails::instance()
+#10 /var/www/html/wp-content/plugins/classic-commerce-master/includes/class-wc-api.php(251): WC_API->register_wp_admin_settings()
+#11 /var/www/html/wp-includes/class-wp-hook.php(308): WC_API->register_rest_routes(Object(WP_REST_Server))
+#12 /var/www/html/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters(NULL, Array)
+#13 /var/www/html/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#14 /var/www/html/wp-includes/rest-api.php(533): do_action('rest_api_init', Object(WP_REST_Server))
+#15 /var/www/html/wp-includes/rest-api.php(359): rest_get_server()
+#16 /var/www/html/wp-includes/class-wp-hook.php(308): rest_api_loaded(Object(WP))
+#17 /var/www/html/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters(NULL, Array)
+#18 /var/www/html/wp-includes/plugin.php(565): WP_Hook->do_action(Array)
+#19 /var/www/html/wp-includes/class-wp.php(410): do_action_ref_array('parse_request', Array)
+#20 /var/www/html/wp-includes/class-wp.php(791): WP->parse_request('')
+#21 /var/www/html/wp-includes/functions.php(1334): WP->main('')
+#22 /var/www/html/wp-blog-header.php(16): wp()
+#23 /var/www/html/index.php(17): require('/var/www/html/w...')
+#24 {main}
+  thrown in /var/www/html/wp-content/plugins/deposits-partial-payments-for-woocommerce/includes/emails/class-awcdp-email-deposit-paid.php on line 201
+
+2025-10-25T19:10:13+00:00 CRITICAL Uncaught Error: Call to undefined method AWCDP_Email_Deposit_Paid::get_default_additional_content() in /var/www/html/wp-content/plugins/deposits-partial-payments-for-woocommerce/includes/emails/class-awcdp-email-deposit-paid.php:201
+Stack trace:
+#0 /var/www/html/wp-content/plugins/classic-commerce-master/includes/emails/class-wc-email.php(239): AWCDP_Email_Deposit_Paid->init_form_fields()
+#1 /var/www/html/wp-content/plugins/deposits-partial-payments-for-woocommerce/includes/emails/class-awcdp-email-deposit-paid.php(30): WC_Email->__construct()
+#2 /var/www/html/wp-content/plugins/deposits-partial-payments-for-woocommerce/includes/emails/class-awcdp-email-deposit-paid.php(222): AWCDP_Email_Deposit_Paid->__construct()
+#3 /var/www/html/wp-content/plugins/deposits-partial-payments-for-woocommerce/includes/class-awcdp-front-end.php(2435): include('/var/www/html/w...')
+#4 /var/www/html/wp-includes/class-wp-hook.php(308): AWCDP_Front_End->awcdp_email_classes(Array)
+#5 /var/www/html/wp-includes/plugin.php(205): WP_Hook->apply_filters(Array, Array)
+#6 /var/www/html/wp-content/plugins/classic-commerce-master/includes/class-wc-emails.php(228): apply_filters('woocommerce_ema...', Array)
+#7 /var/www/html/wp-content/plugins/classic-commerce-master/includes/class-wc-emails.php(185): WC_Emails->init()
+#8 /var/www/html/wp-content/plugins/classic-commerce-master/includes/class-wc-emails.php(50): WC_Emails->__construct()
+#9 /var/www/html/wp-content/plugins/classic-commerce-master/includes/class-wc-api.php(368): WC_Emails::instance()
+#10 /var/www/html/wp-content/plugins/classic-commerce-master/includes/class-wc-api.php(251): WC_API->register_wp_admin_settings()
+#11 /var/www/html/wp-includes/class-wp-hook.php(308): WC_API->register_rest_routes(Object(WP_REST_Server))
+#12 /var/www/html/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters(NULL, Array)
+#13 /var/www/html/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#14 /var/www/html/wp-includes/rest-api.php(533): do_action('rest_api_init', Object(WP_REST_Server))
+#15 /var/www/html/wp-includes/rest-api.php(359): rest_get_server()
+#16 /var/www/html/wp-includes/class-wp-hook.php(308): rest_api_loaded(Object(WP))
+#17 /var/www/html/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters(NULL, Array)
+#18 /var/www/html/wp-includes/plugin.php(565): WP_Hook->do_action(Array)
+#19 /var/www/html/wp-includes/class-wp.php(410): do_action_ref_array('parse_request', Array)
+#20 /var/www/html/wp-includes/class-wp.php(791): WP->parse_request('')
+#21 /var/www/html/wp-includes/functions.php(1334): WP->main('')
+#22 /var/www/html/wp-blog-header.php(16): wp()
+#23 /var/www/html/index.php(17): require('/var/www/html/w...')
+#24 {main}
+  thrown in /var/www/html/wp-content/plugins/deposits-partial-payments-for-woocommerce/includes/emails/class-awcdp-email-deposit-paid.php on line 201
+
+2025-10-25T19:10:36+00:00 CRITICAL Uncaught Error: Call to undefined method AWCDP_Email_Deposit_Paid::get_default_additional_content() in /var/www/html/wp-content/plugins/deposits-partial-payments-for-woocommerce/includes/emails/class-awcdp-email-deposit-paid.php:201
+Stack trace:
+#0 /var/www/html/wp-content/plugins/classic-commerce-master/includes/emails/class-wc-email.php(239): AWCDP_Email_Deposit_Paid->init_form_fields()
+#1 /var/www/html/wp-content/plugins/deposits-partial-payments-for-woocommerce/includes/emails/class-awcdp-email-deposit-paid.php(30): WC_Email->__construct()
+#2 /var/www/html/wp-content/plugins/deposits-partial-payments-for-woocommerce/includes/emails/class-awcdp-email-deposit-paid.php(222): AWCDP_Email_Deposit_Paid->__construct()
+#3 /var/www/html/wp-content/plugins/deposits-partial-payments-for-woocommerce/includes/class-awcdp-front-end.php(2435): include('/var/www/html/w...')
+#4 /var/www/html/wp-includes/class-wp-hook.php(308): AWCDP_Front_End->awcdp_email_classes(Array)
+#5 /var/www/html/wp-includes/plugin.php(205): WP_Hook->apply_filters(Array, Array)
+#6 /var/www/html/wp-content/plugins/classic-commerce-master/includes/class-wc-emails.php(228): apply_filters('woocommerce_ema...', Array)
+#7 /var/www/html/wp-content/plugins/classic-commerce-master/includes/class-wc-emails.php(185): WC_Emails->init()
+#8 /var/www/html/wp-content/plugins/classic-commerce-master/includes/class-wc-emails.php(50): WC_Emails->__construct()
+#9 /var/www/html/wp-content/plugins/classic-commerce-master/includes/class-wc-api.php(368): WC_Emails::instance()
+#10 /var/www/html/wp-content/plugins/classic-commerce-master/includes/class-wc-api.php(251): WC_API->register_wp_admin_settings()
+#11 /var/www/html/wp-includes/class-wp-hook.php(308): WC_API->register_rest_routes(Object(WP_REST_Server))
+#12 /var/www/html/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters(NULL, Array)
+#13 /var/www/html/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#14 /var/www/html/wp-includes/rest-api.php(533): do_action('rest_api_init', Object(WP_REST_Server))
+#15 /var/www/html/wp-includes/rest-api.php(359): rest_get_server()
+#16 /var/www/html/wp-includes/class-wp-hook.php(308): rest_api_loaded(Object(WP))
+#17 /var/www/html/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters(NULL, Array)
+#18 /var/www/html/wp-includes/plugin.php(565): WP_Hook->do_action(Array)
+#19 /var/www/html/wp-includes/class-wp.php(410): do_action_ref_array('parse_request', Array)
+#20 /var/www/html/wp-includes/class-wp.php(791): WP->parse_request('')
+#21 /var/www/html/wp-includes/functions.php(1334): WP->main('')
+#22 /var/www/html/wp-blog-header.php(16): wp()
+#23 /var/www/html/index.php(17): require('/var/www/html/w...')
+#24 {main}
+  thrown in /var/www/html/wp-content/plugins/deposits-partial-payments-for-woocommerce/includes/emails/class-awcdp-email-deposit-paid.php on line 201
+
+2025-10-25T19:11:52+00:00 CRITICAL Uncaught Error: Call to undefined method AWCDP_Email_Deposit_Paid::get_default_additional_content() in /var/www/html/wp-content/plugins/deposits-partial-payments-for-woocommerce/includes/emails/class-awcdp-email-deposit-paid.php:201
+Stack trace:
+#0 /var/www/html/wp-content/plugins/classic-commerce-master/includes/emails/class-wc-email.php(239): AWCDP_Email_Deposit_Paid->init_form_fields()
+#1 /var/www/html/wp-content/plugins/deposits-partial-payments-for-woocommerce/includes/emails/class-awcdp-email-deposit-paid.php(30): WC_Email->__construct()
+#2 /var/www/html/wp-content/plugins/deposits-partial-payments-for-woocommerce/includes/emails/class-awcdp-email-deposit-paid.php(222): AWCDP_Email_Deposit_Paid->__construct()
+#3 /var/www/html/wp-content/plugins/deposits-partial-payments-for-woocommerce/includes/class-awcdp-front-end.php(2435): include('/var/www/html/w...')
+#4 /var/www/html/wp-includes/class-wp-hook.php(308): AWCDP_Front_End->awcdp_email_classes(Array)
+#5 /var/www/html/wp-includes/plugin.php(205): WP_Hook->apply_filters(Array, Array)
+#6 /var/www/html/wp-content/plugins/classic-commerce-master/includes/class-wc-emails.php(228): apply_filters('woocommerce_ema...', Array)
+#7 /var/www/html/wp-content/plugins/classic-commerce-master/includes/class-wc-emails.php(185): WC_Emails->init()
+#8 /var/www/html/wp-content/plugins/classic-commerce-master/includes/class-wc-emails.php(50): WC_Emails->__construct()
+#9 /var/www/html/wp-content/plugins/classic-commerce-master/includes/class-wc-api.php(368): WC_Emails::instance()
+#10 /var/www/html/wp-content/plugins/classic-commerce-master/includes/class-wc-api.php(251): WC_API->register_wp_admin_settings()
+#11 /var/www/html/wp-includes/class-wp-hook.php(308): WC_API->register_rest_routes(Object(WP_REST_Server))
+#12 /var/www/html/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters(NULL, Array)
+#13 /var/www/html/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#14 /var/www/html/wp-includes/rest-api.php(533): do_action('rest_api_init', Object(WP_REST_Server))
+#15 /var/www/html/wp-includes/rest-api.php(359): rest_get_server()
+#16 /var/www/html/wp-includes/class-wp-hook.php(308): rest_api_loaded(Object(WP))
+#17 /var/www/html/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters(NULL, Array)
+#18 /var/www/html/wp-includes/plugin.php(565): WP_Hook->do_action(Array)
+#19 /var/www/html/wp-includes/class-wp.php(410): do_action_ref_array('parse_request', Array)
+#20 /var/www/html/wp-includes/class-wp.php(791): WP->parse_request('')
+#21 /var/www/html/wp-includes/functions.php(1334): WP->main('')
+#22 /var/www/html/wp-blog-header.php(16): wp()
+#23 /var/www/html/index.php(17): require('/var/www/html/w...')
+#24 {main}
+  thrown in /var/www/html/wp-content/plugins/deposits-partial-payments-for-woocommerce/includes/emails/class-awcdp-email-deposit-paid.php on line 201
+
+2025-10-25T19:11:52+00:00 CRITICAL Uncaught Error: Call to undefined method AWCDP_Email_Deposit_Paid::get_default_additional_content() in /var/www/html/wp-content/plugins/deposits-partial-payments-for-woocommerce/includes/emails/class-awcdp-email-deposit-paid.php:201
+Stack trace:
+#0 /var/www/html/wp-content/plugins/classic-commerce-master/includes/emails/class-wc-email.php(239): AWCDP_Email_Deposit_Paid->init_form_fields()
+#1 /var/www/html/wp-content/plugins/deposits-partial-payments-for-woocommerce/includes/emails/class-awcdp-email-deposit-paid.php(30): WC_Email->__construct()
+#2 /var/www/html/wp-content/plugins/deposits-partial-payments-for-woocommerce/includes/emails/class-awcdp-email-deposit-paid.php(222): AWCDP_Email_Deposit_Paid->__construct()
+#3 /var/www/html/wp-content/plugins/deposits-partial-payments-for-woocommerce/includes/class-awcdp-front-end.php(2435): include('/var/www/html/w...')
+#4 /var/www/html/wp-includes/class-wp-hook.php(308): AWCDP_Front_End->awcdp_email_classes(Array)
+#5 /var/www/html/wp-includes/plugin.php(205): WP_Hook->apply_filters(Array, Array)
+#6 /var/www/html/wp-content/plugins/classic-commerce-master/includes/class-wc-emails.php(228): apply_filters('woocommerce_ema...', Array)
+#7 /var/www/html/wp-content/plugins/classic-commerce-master/includes/class-wc-emails.php(185): WC_Emails->init()
+#8 /var/www/html/wp-content/plugins/classic-commerce-master/includes/class-wc-emails.php(50): WC_Emails->__construct()
+#9 /var/www/html/wp-content/plugins/classic-commerce-master/includes/class-wc-api.php(368): WC_Emails::instance()
+#10 /var/www/html/wp-content/plugins/classic-commerce-master/includes/class-wc-api.php(251): WC_API->register_wp_admin_settings()
+#11 /var/www/html/wp-includes/class-wp-hook.php(308): WC_API->register_rest_routes(Object(WP_REST_Server))
+#12 /var/www/html/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters(NULL, Array)
+#13 /var/www/html/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#14 /var/www/html/wp-includes/rest-api.php(533): do_action('rest_api_init', Object(WP_REST_Server))
+#15 /var/www/html/wp-includes/rest-api.php(359): rest_get_server()
+#16 /var/www/html/wp-includes/class-wp-hook.php(308): rest_api_loaded(Object(WP))
+#17 /var/www/html/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters(NULL, Array)
+#18 /var/www/html/wp-includes/plugin.php(565): WP_Hook->do_action(Array)
+#19 /var/www/html/wp-includes/class-wp.php(410): do_action_ref_array('parse_request', Array)
+#20 /var/www/html/wp-includes/class-wp.php(791): WP->parse_request('')
+#21 /var/www/html/wp-includes/functions.php(1334): WP->main('')
+#22 /var/www/html/wp-blog-header.php(16): wp()
+#23 /var/www/html/index.php(17): require('/var/www/html/w...')
+#24 {main}
+  thrown in /var/www/html/wp-content/plugins/deposits-partial-payments-for-woocommerce/includes/emails/class-awcdp-email-deposit-paid.php on line 201
+
+2025-10-25T19:12:04+00:00 CRITICAL Uncaught Error: Call to undefined method AWCDP_Email_Deposit_Paid::get_default_additional_content() in /var/www/html/wp-content/plugins/deposits-partial-payments-for-woocommerce/includes/emails/class-awcdp-email-deposit-paid.php:201
+Stack trace:
+#0 /var/www/html/wp-content/plugins/classic-commerce-master/includes/emails/class-wc-email.php(239): AWCDP_Email_Deposit_Paid->init_form_fields()
+#1 /var/www/html/wp-content/plugins/deposits-partial-payments-for-woocommerce/includes/emails/class-awcdp-email-deposit-paid.php(30): WC_Email->__construct()
+#2 /var/www/html/wp-content/plugins/deposits-partial-payments-for-woocommerce/includes/emails/class-awcdp-email-deposit-paid.php(222): AWCDP_Email_Deposit_Paid->__construct()
+#3 /var/www/html/wp-content/plugins/deposits-partial-payments-for-woocommerce/includes/class-awcdp-front-end.php(2435): include('/var/www/html/w...')
+#4 /var/www/html/wp-includes/class-wp-hook.php(308): AWCDP_Front_End->awcdp_email_classes(Array)
+#5 /var/www/html/wp-includes/plugin.php(205): WP_Hook->apply_filters(Array, Array)
+#6 /var/www/html/wp-content/plugins/classic-commerce-master/includes/class-wc-emails.php(228): apply_filters('woocommerce_ema...', Array)
+#7 /var/www/html/wp-content/plugins/classic-commerce-master/includes/class-wc-emails.php(185): WC_Emails->init()
+#8 /var/www/html/wp-content/plugins/classic-commerce-master/includes/class-wc-emails.php(50): WC_Emails->__construct()
+#9 /var/www/html/wp-content/plugins/classic-commerce-master/includes/class-wc-api.php(368): WC_Emails::instance()
+#10 /var/www/html/wp-content/plugins/classic-commerce-master/includes/class-wc-api.php(251): WC_API->register_wp_admin_settings()
+#11 /var/www/html/wp-includes/class-wp-hook.php(308): WC_API->register_rest_routes(Object(WP_REST_Server))
+#12 /var/www/html/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters(NULL, Array)
+#13 /var/www/html/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#14 /var/www/html/wp-includes/rest-api.php(533): do_action('rest_api_init', Object(WP_REST_Server))
+#15 /var/www/html/wp-includes/rest-api.php(359): rest_get_server()
+#16 /var/www/html/wp-includes/class-wp-hook.php(308): rest_api_loaded(Object(WP))
+#17 /var/www/html/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters(NULL, Array)
+#18 /var/www/html/wp-includes/plugin.php(565): WP_Hook->do_action(Array)
+#19 /var/www/html/wp-includes/class-wp.php(410): do_action_ref_array('parse_request', Array)
+#20 /var/www/html/wp-includes/class-wp.php(791): WP->parse_request('')
+#21 /var/www/html/wp-includes/functions.php(1334): WP->main('')
+#22 /var/www/html/wp-blog-header.php(16): wp()
+#23 /var/www/html/index.php(17): require('/var/www/html/w...')
+#24 {main}
+  thrown in /var/www/html/wp-content/plugins/deposits-partial-payments-for-woocommerce/includes/emails/class-awcdp-email-deposit-paid.php on line 201
+
+2025-10-25T19:36:33+00:00 CRITICAL Uncaught Error: Call to undefined function wc_get_container() in /var/www/html/wp-content/plugins/deposits-partial-payments-for-woocommerce/includes/class-awcdp-backend.php:475
+Stack trace:
+#0 /var/www/html/wp-includes/class-wp-hook.php(308): AWCDP_Backend->awcdp_partial_payments_metabox('event', Object(WP_Post))
+#1 /var/www/html/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters(NULL, Array)
+#2 /var/www/html/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#3 /var/www/html/wp-admin/includes/meta-boxes.php(1725): do_action('add_meta_boxes', 'event', Object(WP_Post))
+#4 /var/www/html/wp-admin/edit-form-advanced.php(270): register_and_do_post_meta_boxes(Object(WP_Post))
+#5 /var/www/html/wp-admin/post-new.php(72): include('/var/www/html/w...')
+#6 {main}
+  thrown in /var/www/html/wp-content/plugins/deposits-partial-payments-for-woocommerce/includes/class-awcdp-backend.php on line 475
+
+2025-10-25T19:38:02+00:00 CRITICAL Uncaught Error: Call to undefined function wc_get_container() in /var/www/html/wp-content/plugins/deposits-partial-payments-for-woocommerce/includes/class-awcdp-backend.php:475
+Stack trace:
+#0 /var/www/html/wp-includes/class-wp-hook.php(308): AWCDP_Backend->awcdp_partial_payments_metabox('sln_booking', Object(WP_Post))
+#1 /var/www/html/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters(NULL, Array)
+#2 /var/www/html/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#3 /var/www/html/wp-admin/includes/meta-boxes.php(1725): do_action('add_meta_boxes', 'sln_booking', Object(WP_Post))
+#4 /var/www/html/wp-admin/edit-form-advanced.php(270): register_and_do_post_meta_boxes(Object(WP_Post))
+#5 /var/www/html/wp-admin/post-new.php(72): include('/var/www/html/w...')
+#6 {main}
+  thrown in /var/www/html/wp-content/plugins/deposits-partial-payments-for-woocommerce/includes/class-awcdp-backend.php on line 475
+
+2025-10-25T19:38:18+00:00 CRITICAL Uncaught Error: Call to undefined function wc_get_container() in /var/www/html/wp-content/plugins/deposits-partial-payments-for-woocommerce/includes/class-awcdp-backend.php:475
+Stack trace:
+#0 /var/www/html/wp-includes/class-wp-hook.php(308): AWCDP_Backend->awcdp_partial_payments_metabox('event', Object(WP_Post))
+#1 /var/www/html/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters(NULL, Array)
+#2 /var/www/html/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#3 /var/www/html/wp-admin/includes/meta-boxes.php(1725): do_action('add_meta_boxes', 'event', Object(WP_Post))
+#4 /var/www/html/wp-admin/edit-form-advanced.php(270): register_and_do_post_meta_boxes(Object(WP_Post))
+#5 /var/www/html/wp-admin/post-new.php(72): include('/var/www/html/w...')
+#6 {main}
+  thrown in /var/www/html/wp-content/plugins/deposits-partial-payments-for-woocommerce/includes/class-awcdp-backend.php on line 475
+
+2025-10-25T19:39:21+00:00 CRITICAL Uncaught Error: Call to undefined function wc_get_container() in /var/www/html/wp-content/plugins/deposits-partial-payments-for-woocommerce/includes/class-awcdp-backend.php:475
+Stack trace:
+#0 /var/www/html/wp-includes/class-wp-hook.php(308): AWCDP_Backend->awcdp_partial_payments_metabox('event', Object(WP_Post))
+#1 /var/www/html/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters(NULL, Array)
+#2 /var/www/html/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#3 /var/www/html/wp-admin/includes/meta-boxes.php(1725): do_action('add_meta_boxes', 'event', Object(WP_Post))
+#4 /var/www/html/wp-admin/edit-form-advanced.php(270): register_and_do_post_meta_boxes(Object(WP_Post))
+#5 /var/www/html/wp-admin/post-new.php(72): include('/var/www/html/w...')
+#6 {main}
+  thrown in /var/www/html/wp-content/plugins/deposits-partial-payments-for-woocommerce/includes/class-awcdp-backend.php on line 475
+
+2025-10-25T19:39:33+00:00 CRITICAL Uncaught Error: Call to undefined function wc_get_container() in /var/www/html/wp-content/plugins/deposits-partial-payments-for-woocommerce/includes/class-awcdp-backend.php:475
+Stack trace:
+#0 /var/www/html/wp-includes/class-wp-hook.php(308): AWCDP_Backend->awcdp_partial_payments_metabox('event', Object(WP_Post))
+#1 /var/www/html/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters(NULL, Array)
+#2 /var/www/html/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#3 /var/www/html/wp-admin/includes/meta-boxes.php(1725): do_action('add_meta_boxes', 'event', Object(WP_Post))
+#4 /var/www/html/wp-admin/edit-form-advanced.php(270): register_and_do_post_meta_boxes(Object(WP_Post))
+#5 /var/www/html/wp-admin/post-new.php(72): include('/var/www/html/w...')
+#6 {main}
+  thrown in /var/www/html/wp-content/plugins/deposits-partial-payments-for-woocommerce/includes/class-awcdp-backend.php on line 475
+
+2025-10-25T19:41:17+00:00 CRITICAL Uncaught Error: Call to undefined function wc_get_container() in /var/www/html/wp-content/plugins/deposits-partial-payments-for-woocommerce/includes/class-awcdp-backend.php:475
+Stack trace:
+#0 /var/www/html/wp-includes/class-wp-hook.php(308): AWCDP_Backend->awcdp_partial_payments_metabox('sln_booking', Object(WP_Post))
+#1 /var/www/html/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters(NULL, Array)
+#2 /var/www/html/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#3 /var/www/html/wp-admin/includes/meta-boxes.php(1725): do_action('add_meta_boxes', 'sln_booking', Object(WP_Post))
+#4 /var/www/html/wp-admin/edit-form-advanced.php(270): register_and_do_post_meta_boxes(Object(WP_Post))
+#5 /var/www/html/wp-admin/post-new.php(72): include('/var/www/html/w...')
+#6 {main}
+  thrown in /var/www/html/wp-content/plugins/deposits-partial-payments-for-woocommerce/includes/class-awcdp-backend.php on line 475
+

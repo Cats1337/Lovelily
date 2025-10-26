@@ -1,0 +1,12 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:Spatie calendar-links
+BEGIN:VEVENT
+UID:17260f7ffc0e31fb99767c1de6f3dbf9
+SUMMARY:Lovelily Blooms - 25 Oct 2025 19:36
+DTSTAMP;TZID=+00:00:20251025T193600
+DTSTART;TZID=+00:00:20251025T193600
+DTEND;TZID=+00:00:20251025T195100
+X-ALT-DESC;FMTTYPE=text/html:Salon name: Lovelily Blooms \n\nSalon address:  \n\nSalon phone:  \n\nSalon email: 4signingr@gmail.com \n\nBooked services:\n\nBooking notes:\nNone\n\nCustomer name:\n \n\nBooking status: Paid
+END:VEVENT
+END:VCALENDAR

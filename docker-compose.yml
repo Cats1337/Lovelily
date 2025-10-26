@@ -1,0 +1,48 @@
+
+services:
+  db:
+    image: mariadb:11
+    command: --default-authentication-plugin=mysql_native_password
+    environment:
+      MYSQL_DATABASE: ${DB_NAME}
+      MYSQL_USER: ${DB_USER}
+      MYSQL_PASSWORD: ${DB_PASS}
+      MYSQL_ROOT_PASSWORD: ${DB_ROOT}
+    volumes:
+      - db_data:/var/lib/mysql
+
+  classicpress:
+    image: classicpress/classicpress:php8.3-apache
+    ports:
+      - "${WEB_PORT}:80"
+    environment:
+      CLASSICPRESS_DB_HOST: db
+      CLASSICPRESS_DB_USER: ${DB_USER}
+      CLASSICPRESS_DB_PASSWORD: ${DB_PASS}
+      CLASSICPRESS_DB_NAME: ${DB_NAME}
+    depends_on:
+      - db
+    volumes:
+      - ./cp:/var/www/html
+      # mount custom php conf to adjust upload limits for development
+      - ./php-ini/uploads.ini:/usr/local/etc/php/conf.d/uploads.ini:ro
+
+  pma:
+    image: phpmyadmin:5
+    ports:
+      - "${PMA_PORT}:80"
+    environment:
+      PMA_HOST: db
+      PMA_USER: root
+      PMA_PASSWORD: ${DB_ROOT}
+      UPLOAD_LIMIT: 16M
+    depends_on:
+      - db
+
+  mailpit:
+    image: axllent/mailpit:latest
+    ports:
+      - "${MAILPIT_PORT}:8025"
+
+volumes:
+  db_data:
